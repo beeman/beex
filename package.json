@@ -4,10 +4,13 @@
   "type": "module",
   "scripts": {
     "dev": "bun run --watch index.ts",
+    "format:check": "prettier --check .",
+    "format": "prettier --write .",
     "start": "bun run index.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prettier": "^3.4.2"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
